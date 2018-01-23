@@ -36,7 +36,7 @@ namespace PersonalBudget.Core
 
                             if (transaction.Category == null)
                             {
-                                CategoryForm form = new CategoryForm();
+                                TaggingForm form = new TaggingForm();
                                 form.ShowDialog(ref transaction);
                             }
 

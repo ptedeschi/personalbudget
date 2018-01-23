@@ -1,6 +1,6 @@
 ﻿namespace PersonalBudget.UI
 {
-    partial class CategoryForm
+    partial class TaggingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -106,7 +106,7 @@
             this.textBoxAccount.Size = new System.Drawing.Size(426, 20);
             this.textBoxAccount.TabIndex = 7;
             // 
-            // CategoryForm
+            // TaggingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,8 +119,8 @@
             this.Controls.Add(this.comboBoxCategory);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
-            this.Name = "CategoryForm";
-            this.Text = "Category";
+            this.Name = "TaggingForm";
+            this.Text = "Tagging";
             this.Load += new System.EventHandler(this.CategoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

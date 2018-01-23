@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace PersonalBudget.UI
 {
-    public partial class CategoryForm : Form
+    public partial class TaggingForm : Form
     {
-        public CategoryForm()
+        public TaggingForm()
         {
             InitializeComponent();
         }
