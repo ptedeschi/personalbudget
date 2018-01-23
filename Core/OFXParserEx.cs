@@ -30,7 +30,7 @@ namespace PersonalBudget.Core
                             transaction.Account = extract.BankAccount.AccountCode;
                             transaction.TransactionType = trans.Type;
                             transaction.Date = trans.Date;
-                            transaction.Description = trans.Description;
+                            transaction.Description = trans.Description.ToUpper();
                             transaction.Value = trans.TransactionValue;
                             transaction.ValueAbs = Math.Abs(trans.TransactionValue);
                             transaction.Category = RecommendationSystem.GetRecommendedCategory(transaction);

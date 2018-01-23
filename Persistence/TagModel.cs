@@ -16,6 +16,12 @@
             col.Insert(tag);
         }
 
+        public static void RemoveAll()
+        {
+            var db = PersonalBudget.Persistence.LiteDB.Connect();
+            var col = db.DropCollection("tags");
+        }
+
         public class Tag
         {
             public string Id { get; set; }

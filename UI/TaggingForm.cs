@@ -57,14 +57,17 @@ namespace PersonalBudget.UI
             {
                 if (x.Name.Equals(category))
                 {
-                    foreach (CategoryModel.Subcategory y in x.Subcategory)
+                    if (x.Subcategory != null)
                     {
-                        this.comboBoxSubCategory.Items.Add(y.Name);
-                    }
+                        foreach (CategoryModel.Subcategory y in x.Subcategory)
+                        {
+                            this.comboBoxSubCategory.Items.Add(y.Name);
+                        }
 
-                    if (this.comboBoxSubCategory.Items.Count > 0)
-                    {
-                        this.comboBoxSubCategory.SelectedIndex = 0;
+                        if (this.comboBoxSubCategory.Items.Count > 0)
+                        {
+                            this.comboBoxSubCategory.SelectedIndex = 0;
+                        }
                     }
 
                     break;

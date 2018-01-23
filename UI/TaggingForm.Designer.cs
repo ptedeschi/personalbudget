@@ -60,6 +60,7 @@
             // 
             // comboBoxCategory
             // 
+            this.comboBoxCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategory.FormattingEnabled = true;
             this.comboBoxCategory.Location = new System.Drawing.Point(24, 169);
             this.comboBoxCategory.Name = "comboBoxCategory";
@@ -69,6 +70,7 @@
             // 
             // comboBoxSubCategory
             // 
+            this.comboBoxSubCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSubCategory.FormattingEnabled = true;
             this.comboBoxSubCategory.Location = new System.Drawing.Point(24, 210);
             this.comboBoxSubCategory.Name = "comboBoxSubCategory";
