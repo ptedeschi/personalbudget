@@ -9,6 +9,12 @@ namespace PersonalBudget.Core
     {
         public static void GenerateExcel(string path, List<Transaction> transactions)
         {
+            // Verifying if target file exists
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }
+
             var excel = new Application();
             excel.Visible = false;
             excel.DisplayAlerts = false;

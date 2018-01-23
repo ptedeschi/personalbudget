@@ -11,11 +11,24 @@ namespace PersonalBudget.UI
         {
             InitializeComponent();
 
-            string[] files = System.IO.Directory.GetFiles(@"C:\Users\patrick.tedeschi\Desktop\Financial\", "*.ofx");
+            this.textBox1.Text = @"C:\Users\patrick.tedeschi\Desktop\Financial";
+        }
 
-            List<Transaction> transactions = OFXParserEx.GetTransactions(files);
+        private void buttonBrowse_Click(object sender, System.EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
 
-            DocumentGenerator.GenerateExcel(@"C:\Users\patrick.tedeschi\Desktop\Financial\Worksheet.xlsx", transactions);
+        private void buttonGo_Click(object sender, System.EventArgs e)
+        {
+            string[] files = System.IO.Directory.GetFiles(this.textBox1.Text, "*.ofx");
+
+            List<Transaction> transactions = OFXParserEx.GetTransactions(files, this.checkBoxEnableTagging.Checked);
+
+            DocumentGenerator.GenerateExcel(this.textBox1.Text + "\\Worksheet.xlsx", transactions);
 
             foreach (Transaction transaction in transactions)
             {

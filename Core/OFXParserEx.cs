@@ -8,7 +8,7 @@ namespace PersonalBudget.Core
 {
     internal class OFXParserEx
     {
-        public static List<Persistence.VO.Transaction> GetTransactions(string[] files)
+        public static List<Persistence.VO.Transaction> GetTransactions(string[] files, bool allowTagging)
         {
             List<Persistence.VO.Transaction> transactions = new List<Persistence.VO.Transaction>();
 
@@ -35,10 +35,13 @@ namespace PersonalBudget.Core
                             transaction.ValueAbs = Math.Abs(trans.TransactionValue);
                             transaction.Category = RecommendationSystem.GetRecommendedCategory(transaction);
 
-                            if (transaction.Category == null)
+                            if (allowTagging)
                             {
-                                TaggingForm form = new TaggingForm();
-                                form.ShowDialog(ref transaction);
+                                if (transaction.Category == null)
+                                {
+                                    TaggingForm form = new TaggingForm();
+                                    form.ShowDialog(ref transaction);
+                                }
                             }
 
                             transaction.SubCategory = RecommendationSystem.GetRecommendedSubCategory(transaction);
