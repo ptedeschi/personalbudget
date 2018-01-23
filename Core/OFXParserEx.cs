@@ -16,6 +16,7 @@ namespace PersonalBudget.Core
             {
                 foreach (string file in files)
                 {
+                    OFXParser.Parser.OfxEncoding = Encoding.Default;
                     Extract extract = OFXParser.Parser.GenerateExtract(file);
 
                     if (extract != null)
@@ -29,7 +30,7 @@ namespace PersonalBudget.Core
                             transaction.Account = extract.BankAccount.AccountCode;
                             transaction.TransactionType = trans.Type;
                             transaction.Date = trans.Date;
-                            transaction.Description = Encode(trans.Description);
+                            transaction.Description = trans.Description;
                             transaction.Value = trans.TransactionValue;
                             transaction.ValueAbs = Math.Abs(trans.TransactionValue);
                             transaction.Category = RecommendationSystem.GetRecommendedCategory(transaction);
@@ -42,7 +43,7 @@ namespace PersonalBudget.Core
 
                             transaction.SubCategory = RecommendationSystem.GetRecommendedSubCategory(transaction);
 
-                            System.Diagnostics.Debug.WriteLine(trans.Description + " > " + Encode(trans.Description));
+                            System.Diagnostics.Debug.WriteLine(trans.Description + " > " + trans.Description);
 
                             // Fix Banco do Brasil transaction type
                             if (transaction.Bank.Equals("1") && transaction.TransactionType.Equals("OTHER"))
@@ -70,12 +71,6 @@ namespace PersonalBudget.Core
             }
 
             return transactions;
-        }
-
-        private static string Encode(string text)
-        {
-            byte[] bytes = Encoding.Default.GetBytes(text);
-            return Encoding.UTF8.GetString(bytes);
         }
     }
 }
