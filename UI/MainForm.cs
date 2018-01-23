@@ -34,6 +34,8 @@ namespace PersonalBudget.UI
             {
                 System.Diagnostics.Debug.WriteLine(transaction.TransactionType + " " + transaction.Date + " " + transaction.Description + " " + transaction.Value);
             }
+
+            MessageBox.Show("Person Budget data generated successfully!!!");
         }
     }
 }
