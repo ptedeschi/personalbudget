@@ -34,13 +34,15 @@
             this.comboBoxSubCategory = new System.Windows.Forms.ComboBox();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.textBoxValue = new System.Windows.Forms.TextBox();
+            this.textBoxTransactionValue = new System.Windows.Forms.TextBox();
+            this.textBoxAccount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(23, 187);
+            this.buttonOK.Location = new System.Drawing.Point(24, 246);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK.Size = new System.Drawing.Size(184, 23);
             this.buttonOK.TabIndex = 0;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -48,9 +50,9 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(265, 187);
+            this.buttonCancel.Location = new System.Drawing.Point(266, 246);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(184, 23);
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -59,40 +61,58 @@
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(23, 110);
+            this.comboBoxCategory.Location = new System.Drawing.Point(24, 169);
             this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(317, 21);
+            this.comboBoxCategory.Size = new System.Drawing.Size(426, 21);
             this.comboBoxCategory.TabIndex = 2;
             this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // comboBoxSubCategory
             // 
             this.comboBoxSubCategory.FormattingEnabled = true;
-            this.comboBoxSubCategory.Location = new System.Drawing.Point(23, 151);
+            this.comboBoxSubCategory.Location = new System.Drawing.Point(24, 210);
             this.comboBoxSubCategory.Name = "comboBoxSubCategory";
-            this.comboBoxSubCategory.Size = new System.Drawing.Size(317, 21);
+            this.comboBoxSubCategory.Size = new System.Drawing.Size(426, 21);
             this.comboBoxSubCategory.TabIndex = 3;
             // 
             // textBoxDescription
             // 
             this.textBoxDescription.Enabled = false;
-            this.textBoxDescription.Location = new System.Drawing.Point(23, 24);
+            this.textBoxDescription.Location = new System.Drawing.Point(24, 26);
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(317, 20);
+            this.textBoxDescription.Size = new System.Drawing.Size(426, 20);
             this.textBoxDescription.TabIndex = 4;
             // 
             // textBoxValue
             // 
-            this.textBoxValue.Location = new System.Drawing.Point(23, 68);
+            this.textBoxValue.Location = new System.Drawing.Point(24, 127);
             this.textBoxValue.Name = "textBoxValue";
-            this.textBoxValue.Size = new System.Drawing.Size(317, 20);
+            this.textBoxValue.Size = new System.Drawing.Size(426, 20);
             this.textBoxValue.TabIndex = 5;
+            // 
+            // textBoxTransactionValue
+            // 
+            this.textBoxTransactionValue.Enabled = false;
+            this.textBoxTransactionValue.Location = new System.Drawing.Point(24, 65);
+            this.textBoxTransactionValue.Name = "textBoxTransactionValue";
+            this.textBoxTransactionValue.Size = new System.Drawing.Size(426, 20);
+            this.textBoxTransactionValue.TabIndex = 6;
+            // 
+            // textBoxAccount
+            // 
+            this.textBoxAccount.Enabled = false;
+            this.textBoxAccount.Location = new System.Drawing.Point(24, 97);
+            this.textBoxAccount.Name = "textBoxAccount";
+            this.textBoxAccount.Size = new System.Drawing.Size(426, 20);
+            this.textBoxAccount.TabIndex = 7;
             // 
             // CategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 220);
+            this.ClientSize = new System.Drawing.Size(471, 290);
+            this.Controls.Add(this.textBoxAccount);
+            this.Controls.Add(this.textBoxTransactionValue);
             this.Controls.Add(this.textBoxValue);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.comboBoxSubCategory);
@@ -115,5 +135,7 @@
         private System.Windows.Forms.ComboBox comboBoxSubCategory;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.TextBox textBoxValue;
+        private System.Windows.Forms.TextBox textBoxTransactionValue;
+        private System.Windows.Forms.TextBox textBoxAccount;
     }
 }

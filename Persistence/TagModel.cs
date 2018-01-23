@@ -9,6 +9,13 @@
             return col.FindAll();
         }
 
+        public static void Insert(Tag tag)
+        {
+            var db = PersonalBudget.Persistence.LiteDB.Connect();
+            var col = db.GetCollection<Tag>("tags");
+            col.Insert(tag);
+        }
+
         public class Tag
         {
             public string Id { get; set; }

@@ -1,6 +1,8 @@
 ﻿using PersonalBudget.Persistence;
 using PersonalBudget.Persistence.VO;
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace PersonalBudget.UI
@@ -16,6 +18,8 @@ namespace PersonalBudget.UI
         {
             this.textBoxDescription.Text = transaction.Description;
             this.textBoxValue.Text = transaction.Description;
+            this.textBoxAccount.Text = transaction.Account;
+            this.textBoxTransactionValue.Text = FormatCurrency(transaction.Value);
 
             return base.ShowDialog();
         }
@@ -80,12 +84,40 @@ namespace PersonalBudget.UI
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string data = this.textBoxValue.Text;
+            string category = (string)this.comboBoxCategory.SelectedItem;
+            string subcategory = (string)this.comboBoxSubCategory.SelectedItem;
+
+            if (!String.IsNullOrEmpty(data) && !String.IsNullOrEmpty(category) && !String.IsNullOrEmpty(subcategory))
+            {
+                TagModel.Tag tag = new TagModel.Tag();
+                tag.Id = Guid.NewGuid().ToString();
+                tag.Name = data;
+                tag.Category = category;
+                tag.Subcategory = subcategory;
+
+                TagModel.Insert(tag);
+                this.Close();
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private string FormatCurrency(double value)
+        {
+            // obtém a cultura local
+            var cultureInfo = Thread.CurrentThread.CurrentCulture;
+            // faz uma cópia das informações de formatação de número da cultura local
+            var numberFormatInfo = (NumberFormatInfo)cultureInfo.NumberFormat.Clone();
+            // fixa o símbolo da moeda estrangeira
+            numberFormatInfo.CurrencySymbol = "R$ ";
+            // obtém o valor em moeda estrangeira formatado conforme a cultura local
+            var valorFormatado = string.Format(numberFormatInfo, "{0:C}", value);
+
+            return valorFormatado;
         }
     }
 }
