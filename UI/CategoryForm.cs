@@ -29,7 +29,16 @@ namespace PersonalBudget.UI
         {
             var res = CategoryModel.GetAll();
 
-            this.comboBoxCategory.DataSource = res;
+            foreach (CategoryModel.Category x in res)
+            {
+                this.comboBoxCategory.Items.Add(x.Name);
+            }
+
+            if (this.comboBoxCategory.Items.Count > 0)
+            {
+                this.comboBoxCategory.SelectedIndex = 0;
+            }
+
             this.comboBoxCategory.DisplayMember = "Name";
             this.comboBoxCategory.ValueMember = "Name";
         }
@@ -40,7 +49,7 @@ namespace PersonalBudget.UI
 
             var res = CategoryModel.GetAll();
 
-            foreach (CategoryModel.Category x in res.Category)
+            foreach (CategoryModel.Category x in res)
             {
                 if (x.Name.Equals(category))
                 {
@@ -64,7 +73,7 @@ namespace PersonalBudget.UI
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string categoryName = ((CategoryModel.Category)(this.comboBoxCategory.SelectedItem)).Name;
+            string categoryName = (string)(this.comboBoxCategory.SelectedItem);
 
             FillSubcategory(categoryName);
         }

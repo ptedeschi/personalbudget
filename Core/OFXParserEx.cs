@@ -1,4 +1,5 @@
 ﻿using OFXParser.Entities;
+using PersonalBudget.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,11 +34,11 @@ namespace PersonalBudget.Core
                             transaction.ValueAbs = Math.Abs(trans.TransactionValue);
                             transaction.Category = RecommendationSystem.GetRecommendedCategory(transaction);
 
-                            //if (transaction.Category == null)
-                            //{
-                            //    CategoryForm form = new CategoryForm();
-                            //    form.ShowDialog(ref transaction);
-                            //}
+                            if (transaction.Category == null)
+                            {
+                                CategoryForm form = new CategoryForm();
+                                form.ShowDialog(ref transaction);
+                            }
 
                             transaction.SubCategory = RecommendationSystem.GetRecommendedSubCategory(transaction);
 
