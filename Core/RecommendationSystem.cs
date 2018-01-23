@@ -1,17 +1,16 @@
-﻿using Newtonsoft.Json;
-using PersonalBudget.Persistence;
-using System.IO;
+﻿using PersonalBudget.Persistence;
+using PersonalBudget.Persistence.VO;
 
 namespace PersonalBudget.Core
 {
     internal class RecommendationSystem
     {
-        public static string GetRecommendedCategory(TransactionEx transaction)
+        public static string GetRecommendedCategory(Transaction transaction)
         {
-            var categories = JsonConvert.DeserializeObject<Categories>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\categories.json"));
-            var tags = JsonConvert.DeserializeObject<Tags>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\tags.json"));
+            var categories = CategoryModel.GetAll();
+            var tags = TagModel.GetAll();
 
-            foreach (Tag x in tags.Tag)
+            foreach (TagModel.Tag x in tags)
             {
                 if (transaction.Description.Contains(x.Name))
                 {
@@ -22,12 +21,12 @@ namespace PersonalBudget.Core
             return null;
         }
 
-        public static string GetRecommendedSubCategory(TransactionEx transaction)
+        public static string GetRecommendedSubCategory(Transaction transaction)
         {
-            var categories = JsonConvert.DeserializeObject<Categories>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\categories.json"));
-            var tags = JsonConvert.DeserializeObject<Tags>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\tags.json"));
+            var categories = CategoryModel.GetAll();
+            var tags = TagModel.GetAll();
 
-            foreach (Tag x in tags.Tag)
+            foreach (TagModel.Tag x in tags)
             {
                 if (transaction.Description.Contains(x.Name))
                 {

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace PersonalBudget.Persistence
+namespace PersonalBudget.Persistence.VO
 {
-    public class TransactionEx
+    public class Transaction
     {
         private string id;
         private string bank;
@@ -16,11 +16,11 @@ namespace PersonalBudget.Persistence
         private string category;
         private string subCategory;
 
-        public TransactionEx()
+        public Transaction()
         {
         }
 
-        public TransactionEx(string id, string bank, string agency, string account, string transactionType, DateTime date, string description, double value, double valueAbs, string category, string subCategory)
+        public Transaction(string id, string bank, string agency, string account, string transactionType, DateTime date, string description, double value, double valueAbs, string category, string subCategory)
         {
             this.id = id;
             this.bank = bank;

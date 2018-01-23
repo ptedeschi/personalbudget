@@ -1,7 +1,6 @@
-﻿using Newtonsoft.Json;
-using PersonalBudget.Persistence;
+﻿using PersonalBudget.Persistence;
+using PersonalBudget.Persistence.VO;
 using System;
-using System.IO;
 using System.Windows.Forms;
 
 namespace PersonalBudget.UI
@@ -13,7 +12,7 @@ namespace PersonalBudget.UI
             InitializeComponent();
         }
 
-        public DialogResult ShowDialog(ref TransactionEx transaction)
+        public DialogResult ShowDialog(ref Transaction transaction)
         {
             this.textBoxDescription.Text = transaction.Description;
             this.textBoxValue.Text = transaction.Description;
@@ -28,9 +27,9 @@ namespace PersonalBudget.UI
 
         private void FillCategory()
         {
-            var res = JsonConvert.DeserializeObject<Categories>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\categories.json"));
+            var res = CategoryModel.GetAll();
 
-            this.comboBoxCategory.DataSource = res.Category;
+            this.comboBoxCategory.DataSource = res;
             this.comboBoxCategory.DisplayMember = "Name";
             this.comboBoxCategory.ValueMember = "Name";
         }
@@ -39,13 +38,13 @@ namespace PersonalBudget.UI
         {
             this.comboBoxSubCategory.Items.Clear();
 
-            var res = JsonConvert.DeserializeObject<Categories>(File.ReadAllText(@"C:\Users\patrick.tedeschi\Desktop\Financial\categories.json"));
+            var res = CategoryModel.GetAll();
 
-            foreach (Category x in res.Category)
+            foreach (CategoryModel.Category x in res.Category)
             {
                 if (x.Name.Equals(category))
                 {
-                    foreach (Subcategory y in x.Subcategory)
+                    foreach (CategoryModel.Subcategory y in x.Subcategory)
                     {
                         this.comboBoxSubCategory.Items.Add(y.Name);
                     }
@@ -65,7 +64,7 @@ namespace PersonalBudget.UI
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string categoryName = ((Category)(this.comboBoxCategory.SelectedItem)).Name;
+            string categoryName = ((CategoryModel.Category)(this.comboBoxCategory.SelectedItem)).Name;
 
             FillSubcategory(categoryName);
         }

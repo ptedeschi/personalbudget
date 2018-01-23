@@ -1,6 +1,4 @@
 ﻿using OFXParser.Entities;
-using PersonalBudget.Persistence;
-using PersonalBudget.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,9 +7,9 @@ namespace PersonalBudget.Core
 {
     internal class OFXParserEx
     {
-        public static List<TransactionEx> GetTransactions(string[] files)
+        public static List<Persistence.VO.Transaction> GetTransactions(string[] files)
         {
-            List<TransactionEx> transactions = new List<TransactionEx>();
+            List<Persistence.VO.Transaction> transactions = new List<Persistence.VO.Transaction>();
 
             if (files != null && files.Length > 0)
             {
@@ -23,7 +21,7 @@ namespace PersonalBudget.Core
                     {
                         foreach (var trans in extract.Transactions)
                         {
-                            TransactionEx transaction = new TransactionEx();
+                            Persistence.VO.Transaction transaction = new Persistence.VO.Transaction();
                             transaction.Id = trans.Id;
                             transaction.Bank = extract.BankAccount.Bank.Code.ToString();
                             transaction.Agency = extract.BankAccount.AgencyCode;

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using PersonalBudget.Persistence;
+using PersonalBudget.Persistence.VO;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +7,7 @@ namespace PersonalBudget.Core
 {
     internal class DocumentGenerator
     {
-        public static void GenerateExcel(string path, List<TransactionEx> transactions)
+        public static void GenerateExcel(string path, List<Transaction> transactions)
         {
             var excel = new Application();
             excel.Visible = false;
@@ -33,7 +33,7 @@ namespace PersonalBudget.Core
 
                 int row = 2;
 
-                foreach (TransactionEx transaction in transactions)
+                foreach (Transaction transaction in transactions)
                 {
                     worKsheeT.Cells[row, 1].value = transaction.Id;
                     worKsheeT.Cells[row, 2].value = transaction.Bank;
