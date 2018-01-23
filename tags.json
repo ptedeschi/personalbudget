@@ -1,0 +1,292 @@
+{
+   "Tag":[
+      {
+         "Name":"AUTO POSTO",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Combustível"
+      },
+      {
+         "Name":"LAGUNDRI",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Refeição fora de casa"
+      },
+      {
+         "Name":"ESTAPAR HOSP M THEOD",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Estacionamento"
+      },
+      {
+         "Name":"CONFRARIA D",
+         "Description":"",
+         "Category":"Pessoais",
+         "Subcategory":"Cabeleireiro / Manicure / Higiene pessoal"
+      },
+      {
+         "Name":"DA NET SERVI",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Internet / TV a cabo"
+      },
+      {
+         "Name":"INT UNICLASS2.0",
+         "Description":"",
+         "Category":"Serviços_Financeiros",
+         "Subcategory":"Pagamento da fatura do cartão de crédito"
+      },
+      {
+         "Name":"ESTACION",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Estacionamento"
+      },
+      {
+         "Name":"RSHOP-SAMBAA",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"RSHOP-CRISCAFE",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Outros (café, água, sorvetes, etc)"
+      },
+      {
+         "Name":"Pagto Energia El?trica",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Energia Elétrica"
+      },
+      {
+         "Name":"Net Servi?os de Comunica?",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Internet / TV a cabo"
+      },
+      {
+         "Name":"PARQUE D PE",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Estacionamento"
+      },
+      {
+         "Name":"NIPPOKAR CA",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Manutenção / Lavagem / Troca de óleo"
+      },
+      {
+         "Name":"RSHOP-H P M GARRI",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"DA SANASA",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Consumo de água"
+      },
+      {
+         "Name":"CARTAO PERSONNALITE",
+         "Description":"",
+         "Category":"Serviços_Financeiros",
+         "Subcategory":"Pagamento da fatura do cartão de crédito"
+      },
+      {
+         "Name":"Recebimento de Proventos - COMPANHIA PIRATININGA DE FORCA E LUZ",
+         "Description":"",
+         "Category":"Receita",
+         "Subcategory":"Salário  / Adiantamento"
+      },
+      {
+         "Name":"REMUNERACAO/SALARIO",
+         "Description":"",
+         "Category":"Receita",
+         "Subcategory":"Salário  / Adiantamento"
+      },
+      {
+         "Name":"RSHOP-6291 - GRSA",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"BAR LADO B",
+         "Description":"",
+         "Category":"Lazer",
+         "Subcategory":"Restaurantes / Bares / Festas"
+      },
+      {
+         "Name":"SUPERMERCAD",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Supermercado"
+      },
+      {
+         "Name":"RSHOP-EMPORIO DAS",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Refeição fora de casa"
+      },
+      {
+         "Name":"DA VIVO-SP",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Celular"
+      },
+      {
+         "Name":"DROGA RAIA",
+         "Description":"",
+         "Category":"Saúde",
+         "Subcategory":"Medicamentos"
+      },
+      {
+         "Name":"SISPAG INST PESQ ELDORA",
+         "Description":"",
+         "Category":"Receita",
+         "Subcategory":"Salário  / Adiantamento"
+      },
+      {
+         "Name":"NOVA GALLER",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Estacionamento"
+      },
+      {
+         "Name":"RSHOP-ATOS",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"Pagamento Fatura de G?s",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Gás"
+      },
+      {
+         "Name":"DA VIVO(GVT)",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Internet / TV a cabo"
+      },
+      {
+         "Name":"BAR DO CARE",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Restaurantes / Bares / Festas"
+      },
+      {
+         "Name":"PADARIA ALE",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Padaria"
+      },
+      {
+         "Name":"JK PANE",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Padaria"
+      },
+      {
+         "Name":"POSTO CAMPI",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Combustível"
+      },
+      {
+         "Name":"RSHOP-C C NOV DPE",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"SORVETES CA",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Outros (café, água, sorvetes, etc)"
+      },
+      {
+         "Name":"POSTO CID U",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Combustível"
+      },
+      {
+         "Name":"RSHOP-REDE OBA",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Supermercado"
+      },
+      {
+         "Name":"RSHOP-FORMULA PAR",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"RSHOP-MOGI MIRIM",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"RSHOP-MORTADELA E",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Refeição fora de casa"
+      },
+      {
+         "Name":"RSHOP-MAKRO LOJA",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Supermercado"
+      },
+      {
+         "Name":"RSHOP-FARMAIS",
+         "Description":"",
+         "Category":"Saúde",
+         "Subcategory":"Medicamentos"
+      },
+      {
+         "Name":"RSHOP-GERA TRIGOS",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"REND PAGO APLIC AUT MAIS",
+         "Description":"",
+         "Category":"Receita",
+         "Subcategory":""
+      },
+      {
+         "Name":"RSHOP-PAO DE ACUC",
+         "Description":"",
+         "Category":"Alimentação",
+         "Subcategory":"Supermercado"
+      },
+      {
+         "Name":"FINANC IMOBILIARIO",
+         "Description":"",
+         "Category":"Moradia",
+         "Subcategory":"Prestação /Aluguel de imóvel"
+      },
+      {
+         "Name":"RSHOP-MERCURE EXE",
+         "Description":"",
+         "Category":"Unknown",
+         "Subcategory":""
+      },
+      {
+         "Name":"RSHOP-WATER CAR",
+         "Description":"",
+         "Category":"Transporte",
+         "Subcategory":"Manutenção / Lavagem / Troca de óleo"
+      }
+   ]
+}

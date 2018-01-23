@@ -1,0 +1,321 @@
+{
+   "Category":[
+      {
+         "Id":"db413ba159654fa8acf34bd3433e329b",
+         "Name":"Receita",
+         "Subcategory":[
+            {
+               "Id":"b89e2bdcf42c4e8eb7fad8c2a0864a88",
+               "Name":"Salário  / Adiantamento"
+            },
+            {
+               "Id":"6578b86ebfe546aaae6f1fa676ca40d7",
+               "Name":"Férias  13º salário"
+            },
+            {
+               "Id":"7f7ad10559b642a9bcd3ba12daef315a",
+               "Name":"Aposentadoria"
+            },
+            {
+               "Id":"9307975f34c249dda54fbd4f11544208",
+               "Name":"Receita extra (aluguel, restituição IR)"
+            },
+            {
+               "Id":"8d36db656b274ca9ab7422260bdc6e43",
+               "Name":"Outras Receitas"
+            }
+         ]
+      },
+      {
+         "Id":"5cdaf3c6f1d64b6eb769a1864d851b3b",
+         "Name":"Alimentação",
+         "Subcategory":[
+            {
+               "Id":"f7ec825e955e4081b7b550d6a1a659ba",
+               "Name":"Supermercado"
+            },
+            {
+               "Id":"ebc597d71b1843d0bb5ab00c55f54ed4",
+               "Name":"Feira  / Sacolão"
+            },
+            {
+               "Id":"97aa657f41a54292907fcecf2ed60861",
+               "Name":"Padaria"
+            },
+            {
+               "Id":"b230d71c7d47455ba00871ff0186e84b",
+               "Name":"Refeição fora de casa"
+            },
+            {
+               "Id":"ab8dbe87cf78411c928d2135f39f06f1",
+               "Name":"Outros (café, água, sorvetes, etc)"
+            }
+         ]
+      },
+      {
+         "Id":"bd208e274a28402785c8c04b56b8084e",
+         "Name":"Moradia",
+         "Subcategory":[
+            {
+               "Id":"a147ad6aca784034a4f03fdf12a2f88e",
+               "Name":"Prestação /Aluguel de imóvel"
+            },
+            {
+               "Id":"2dfcf1496e7d493fbefb3ee8e05f9249",
+               "Name":"Condomínio"
+            },
+            {
+               "Id":"939c270ab4564127a5c3d9da9fd317c0",
+               "Name":"Consumo de água"
+            },
+            {
+               "Id":"7fa6452f2d254e1e965a51ce949bff07",
+               "Name":"Serviço de limpeza( diarista ou mensalista)"
+            },
+            {
+               "Id":"98f49caeb9ac442fb22957cc8bfd2665",
+               "Name":"Energia Elétrica"
+            },
+            {
+               "Id":"c94c08791aaf46e1b41c4e521d78af07",
+               "Name":"Gás"
+            },
+            {
+               "Id":"2049f28f97c4441f8d078054430e2cee",
+               "Name":"IPTU"
+            },
+            {
+               "Id":"0b33505153b3477db695fe9d9ad58f47",
+               "Name":"Decoração da casa"
+            },
+            {
+               "Id":"fec41aee864847b787813bc288642b7a",
+               "Name":"Manutenção / Reforma da casa"
+            },
+            {
+               "Id":"a6e68e0580f44be79d05cfbe5cf3f1b8",
+               "Name":"Celular"
+            },
+            {
+               "Id":"6fa2f173a08248e6abc90ef148729fbf",
+               "Name":"Telefone fixo"
+            },
+            {
+               "Id":"172d5c1725dc479d9641da5099a054b8",
+               "Name":"Internet / TV a cabo"
+            }
+         ]
+      },
+      {
+         "Id":"31ba8427bb284aecab3b4c19d034f99e",
+         "Name":"Educação",
+         "Subcategory":[
+            {
+               "Id":"fea7869f1eae4c198c00fa14e0c1ef3a",
+               "Name":"Matricula Escolar/ Mensalidade "
+            },
+            {
+               "Id":"284acfb50b6f4610a19eb23eebaeed40",
+               "Name":"Material Escolar"
+            },
+            {
+               "Id":"c707a7e802c943b1ad4a518afda6a169",
+               "Name":"Outros cursos"
+            },
+            {
+               "Id":"0dacd45627444788bf98f0514e92b810",
+               "Name":"Transporte escolar"
+            }
+         ]
+      },
+      {
+         "Id":"3a6575524b0a4f7f8103af8ed6052161",
+         "Name":"Animal de Estimação",
+         "Subcategory":[
+            {
+               "Id":"1017880e711a47568587698add4c98d7",
+               "Name":"Ração "
+            },
+            {
+               "Id":"1cb03f58292d4e86b567fe7e686467a3",
+               "Name":"Banho / Tosa"
+            },
+            {
+               "Id":"6bb900cb113a443a89a879cce9d233f0",
+               "Name":"Veterinário / medicamento"
+            },
+            {
+               "Id":"4944dc0ee434454cbbe9d044684b7bcd",
+               "Name":"Outros (acessórios, brinquedos, hotel, dog walker)"
+            }
+         ]
+      },
+      {
+         "Id":"aab8ec4570984846828a971f35e76dc6",
+         "Name":"Saúde",
+         "Subcategory":[
+            {
+               "Id":"8464d9e440e24aa386912a3a0addaaa4",
+               "Name":"Plano de saúde"
+            },
+            {
+               "Id":"9896f7c7d1004f2e81b89e619875a32b",
+               "Name":"Medicamentos"
+            },
+            {
+               "Id":"d7292c74ef464875b00e7e6b9259e4d6",
+               "Name":"Dentista"
+            },
+            {
+               "Id":"8307294d582d49739c598d39f47291ee",
+               "Name":"Terapia / Psicólogo  / Acupuntura"
+            },
+            {
+               "Id":"945f4935143a42ac9fa9e867fd8a755d",
+               "Name":"Médicos/Exames fora do plano de saúde"
+            },
+            {
+               "Id":"82ac1827822f4f5f8526fe1952786509",
+               "Name":"Academia / Tratamento Estético"
+            }
+         ]
+      },
+      {
+         "Id":"a98597393fc5440f9b9fa2303029f4af",
+         "Name":"Transporte",
+         "Subcategory":[
+            {
+               "Id":"c72a1b5e212a49fea2c58bd6eb908b7e",
+               "Name":"Ônibus / Metrô"
+            },
+            {
+               "Id":"fd015a8e2bb3409096a7aec86a253831",
+               "Name":"Taxi"
+            },
+            {
+               "Id":"61c937afd2684f18a6bc29bf3c1a7325",
+               "Name":"Combustível"
+            },
+            {
+               "Id":"edbd5b5e68424368ae35f6b0bfcca7f4",
+               "Name":"Estacionamento"
+            },
+            {
+               "Id":"1c69a16fa31c4351bd2e6accf3d663af",
+               "Name":"Seguro Auto"
+            },
+            {
+               "Id":"276dc41ed3a24bc4b948b89ef400520a",
+               "Name":"Manutenção / Lavagem / Troca de óleo"
+            },
+            {
+               "Id":"59ac9c8532ac4c0491597094f161bb1a",
+               "Name":"Licenciamento"
+            },
+            {
+               "Id":"34fdfa5f8c364b208d03b46e54b54ff5",
+               "Name":"Pedágio"
+            },
+            {
+               "Id":"5fc1824832d2461f8e4eb66786efaf78",
+               "Name":"IPVA"
+            }
+         ]
+      },
+      {
+         "Id":"c83696f45e2c4d46bd731a8605da4b56",
+         "Name":"Pessoais",
+         "Subcategory":[
+            {
+               "Id":"b72112a4f60648348e937eeed4c14c16",
+               "Name":"Vestuário / Calçados / Acessórios"
+            },
+            {
+               "Id":"339592b6bf3142cfbe7ebb5bc7589a3d",
+               "Name":"Cabeleireiro / Manicure / Higiene pessoal"
+            },
+            {
+               "Id":"8082d18d0bb0410d94c974caa1d7d209",
+               "Name":"Presentes "
+            },
+            {
+               "Id":"63f1c69e257641dda8347e33f1ff0817",
+               "Name":"Outros"
+            }
+         ]
+      },
+      {
+         "Id":"c9d21813668348a1921cb7eb17ac28ee",
+         "Name":"Lazer",
+         "Subcategory":[
+            {
+               "Id":"bdf5a37cf4cc4859b9532fa396fa8d1d",
+               "Name":"Cinema / Teatro / Shows"
+            },
+            {
+               "Id":"fe9868ce596449e099834745c3ba84cb",
+               "Name":"Livros / Revistas / Cd´s "
+            },
+            {
+               "Id":"0038a4bdafb64ce4aa2c1e3f5b733f5a",
+               "Name":"Clube / Parques / Casa Noturna"
+            },
+            {
+               "Id":"069110589f39424a96c020247fa3b6fa",
+               "Name":"Viagens "
+            },
+            {
+               "Id":"b9f9fa4698b3476c872911f4162a7415",
+               "Name":"Restaurantes / Bares / Festas"
+            }
+         ]
+      },
+      {
+         "Id":"4320311638c040c89e5a8500c5216b87",
+         "Name":"Serviços Financeiros",
+         "Subcategory":[
+            {
+               "Id":"a6d379310e00415c97f643ca7c0c904a",
+               "Name":"Empréstimos"
+            },
+            {
+               "Id":"51baec6fea514408857359ec2f81cb1f",
+               "Name":"Seguros (vida/residencial)"
+            },
+            {
+               "Id":"b44f9d99483a4fe6a76f20b68711f12a",
+               "Name":"Previdência privada"
+            },
+            {
+               "Id":"fc55ac0b04964c9da61afc26df7bcc65",
+               "Name":"Juros Cheque Especial"
+            },
+            {
+               "Id":"c20eecc91360464a8649987ef9e47464",
+               "Name":"Tarifas bancárias"
+            },
+            {
+               "Id":"c711499ff0e34f04bc786e791bcc1034",
+               "Name":"Financiamento de veículo"
+            },
+            {
+               "Id":"d4e34e6aa10144a689e30fb7f4d0462f",
+               "Name":"Pagamento da fatura do cartão de crédito"
+            },
+            {
+               "Id":"9dad58d4adf94d5f8ec915289d131294",
+               "Name":"Imposto de Renda a Pagar "
+            },
+            {
+               "Id":"0d13888d8d5c444fb032eb7106b29b9d",
+               "Name":"Saque"
+            }
+         ]
+      },
+      {
+         "Id":"81b11b1ee3994da6a9026aea9841f75e",
+         "Name":"Unknown",
+         "Subcategory":null
+      }
+   ]
+}
